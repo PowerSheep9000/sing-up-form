@@ -10,17 +10,35 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
-    background-color: beige;
+    background-image: url(images/fox.jpg);
+    background-size: cover;
+    height: 100vh;
 }
 
 .odin-logo {
-    background-color: azure;
-    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 48, 47, 0.5);
+
+    margin-top: 180px;
     width: 100%;
     height: 200px;
+}
+
+#fox-img {
+    height: 90%;
+    width: 160px;
+    opacity: 1.0;
+}
+
+#fox-text {
+    color: #FFFFF0;
+    opacity: 1.0;
 }
 
 .copyright {
     display: flex;
     justify-content: center;
+    color: #FFFFF0;
 }
