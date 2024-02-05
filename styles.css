@@ -1,3 +1,8 @@
+@font-face {
+    font-family: banner-font;
+    src: url(AnkhSanctuary-nROx4.ttf);
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -9,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
+    width: 40vw;
     background-image: url(images/fox.jpg);
     background-size: cover;
     height: 100vh;
@@ -35,10 +40,55 @@ body {
 #fox-text {
     color: #FFFFF0;
     opacity: 1.0;
+    font-family: banner-font;
+    font-size: 4rem;
 }
 
 .copyright {
     display: flex;
     justify-content: center;
     color: #FFFFF0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.main-top,
+.main-bottom {
+    height: 30%;
+    background-color: #F2F2F2;
+}
+
+.main-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 10rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.main-mid {
+    height: 40%;
+    box-shadow: black 0.7em 0.7em 1em;
+}
+
+.main-bottom {
+    box-shadow: black 0.3em 0.3em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4rem;
+    padding-right: 10rem;
+    gap: 1.5rem;
+}
+
+#bottom-button {
+    
 }
