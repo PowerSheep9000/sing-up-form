@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign Up Form</title>
+    <script type="text/javascript" src="signup-logic.js" defer></script>
 </head>
 <body>
     <div class="banner">
@@ -55,12 +56,14 @@
 
                     <div class="form-pair">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd">
+                        <input type="password" id="pwd" name="pwd"  minlength="8 required">
+                        <span class="error" id="error1" aria-live="polite"></span>
                     </div>
 
                     <div class="form-pair">
                         <label for="pwd-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="pwd-confirm" name="pwd-confirm">
+                        <input type="password" id="pwd-confirm" name="pwd-confirm"  minlength="8 required">
+                        <span class="error" id="error2" aria-live="polite"></span>
                     </div>
                 </div>
             </form>
